@@ -6,7 +6,7 @@
     <title>Rock Paper Scissors</title>
 </head>
 
-<body>
+<body onload="game()">
     <script>
         function computerPlay() {
             myArray = ["rock", "paper", "scissors"];
@@ -14,14 +14,14 @@
             return myArray[x];
         }
 
-
         let computerScore;
         let computerSelection;
         let playerSelection;
         let playerScore;
+        let round = 1;
 
         function singleRound(playerSelection, computerSelection) {
-            playerSelection = prompt("Rock, Paper or Scissors?").toLowerCase();
+            playerSelection = prompt("Round: " + round + "\nRock, Paper or Scissors?").toLowerCase();
             computerSelection = computerPlay();
 
             if (playerSelection == "rock") {
@@ -72,6 +72,7 @@
             for (i = 0; i < 5; i++) {
                 singleRound();
                 console.log("Player: " + playerScore + " - Computer: " + computerScore);
+                ++round;
             }
             if (playerScore > computerScore) {
                 console.log("You won the game!");
