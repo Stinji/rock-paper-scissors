@@ -3,10 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Rock Paper Scissors</title>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body onload="game()">
+<body>
+    <h1 class="title">Rock Paper Scissors</h1>
+    <h2 class="subtitle">Man versus Machine</h2>
+    <div class="image-container">
+        <img class="rps rock" src="images/rock.png" alt="drawing of a rock">
+        <img class="rps paper" src="images/paper.png" alt="drawing of paper">
+        <img class="rps scissors" src="images/scissors.png" alt="drawing of scissors">
+    </div>
     <script>
         function computerPlay() {
             myArray = ["rock", "paper", "scissors"];
