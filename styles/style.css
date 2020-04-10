@@ -18,7 +18,7 @@ body {
 .title {
     color: white;
     font-size: 48px;
-    margin: 175px 0 0;
+    margin: 25vh 0 0;
     text-align: center;
     width: 100vw;
 }
@@ -45,7 +45,7 @@ body {
     margin: 0 50px;
 }
 
-.rock:hover, .paper:hover, .scissors:hover {
+#rock:hover, #paper:hover, #scissors:hover {
     opacity: 80%;
 }
 
