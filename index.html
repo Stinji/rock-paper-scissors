@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="icon" href="images/rock-paper-scissors-hand-favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="div-flex">
+        <h1 class="title">Rock Paper Scissors</h1>
+        <div class="round-score">
+            <div class="score">
+                <div class="win">
+                    <p>Win</p>
+                    <p id="win">0</p>
+                </div>
+                <div class="tie">
+                    <p>Tie</p>
+                    <p id="tie">0</p>
+                </div>
+                <div class="loss">
+                    <p>Loss</p>
+                    <p id="loss">0</p>
+                </div>
+            </div>
+            <p id="round">Round</p>
+        </div>
+        <div class="action-div">
+            <div class="choice">
+                <img id="user-choice" src="images/rock-main.png">
+            </div>
+            <div class="recent-results">
+            </div>
+            <div class="choice">
+                <img id="computer-choice" src="images/rock-main.png">
+            </div>
+        </div>
+        <div class="rps-div">
+            <img id="rock" src="images/rock-main.png" alt="rock">
+            <img id="paper" src="images/paper-main.png" alt="paper">
+            <img id="scissors" src="images/scissors-main.png" alt="scissors">
+        </div>
+        <div>
+            <p class="move">Make your move.</p>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
