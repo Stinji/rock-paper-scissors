@@ -5,17 +5,17 @@ const res = document.querySelector('.recent-results')
 let i = 1;
 
 rock.addEventListener('click', () => {
-    game('Rock');
+    game('rock');
 })
 paper.addEventListener('click', () => {
-    game('Paper');
+    game('paper');
 })
 scissors.addEventListener('click', () => {
-    game('Scissors');
+    game('scissors');
 })
 
 function calculateComputerChoice() {
-    const computerArray = ['Rock', 'Paper', 'Scissors'];
+    const computerArray = ['rock', 'paper', 'scissors'];
     return computerArray[Math.floor(Math.random() * 3)];
 }
 
@@ -26,17 +26,17 @@ function changeChoice(userChoice, computerChoice) {
 
 function playRound(userChoice, computerChoice) {
     switch (userChoice + computerChoice) {
-        case 'RockScissors':
-        case 'PaperRock':
-        case 'ScissorsPaper':
+        case 'rockscissors':
+        case 'paperrock':
+        case 'scissorspaper':
             return 'win';
-        case 'RockPaper':
-        case 'PaperScissors':
-        case 'ScissorsRock':
+        case 'rockpaper':
+        case 'paperscissors':
+        case 'scissorsrock':
             return 'loss';
-        case 'RockRock':
-        case 'PaperPaper':
-        case 'ScissorsScissors':
+        case 'rockrock':
+        case 'paperpaper':
+        case 'scissorsscissors':
             return 'tie';
     }
 }
